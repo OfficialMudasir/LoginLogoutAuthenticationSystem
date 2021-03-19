@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LoginLogoutAuthenticationSystem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom box-shadow mb-3">
+        <div class="container text-white">
+            <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">MySite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-value="about" id="about" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " data-value="portfolio" id="portfolio" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " data-value="blog" id="blog" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " data-value="team" id="team" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " data-value="contact" id="contact" href="#">Contact</a>
+                    </li>
+                </ul>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="description ">
+                <h1>
+                    Hello ,Welcome To My official Website
+                    <hr />
+                    <p>
+                        My name is Mudasir. I'm a software developer trainee at Tanentelgia Technologies. Currently i am wroking on the DotNet core technogoly and i tried to design this page using bootstrap ans css as an assignment for today.
+                                    (Damanpreet Mam).
+                    </p>
+                    <button class="btn btn-outline-secondary btn-lg">See more</button>
+                </h1>
+            </div>
+
+        </div>
+    </header>
+  
+
+    <section id="section">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </section>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - LoginLogoutAuthenticationSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

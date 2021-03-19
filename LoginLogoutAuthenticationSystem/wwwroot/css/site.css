@@ -1,0 +1,287 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: "Raleway";
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.nav-link:hover {
+    background: #808080;
+    color: whitesmoke;
+}
+.navbar-toggler {
+    background: #fff !important;
+}
+
+
+
+
+
+    
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+    margin-left: 0px;
+    background-image: url("../Images/c-programs.png");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 60px;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: relative ;
+    top: 30%;
+    margin: auto;
+    padding-top: 10em;
+}
+
+    .description h1 {
+        color: #F97300;
+    }
+
+    .description p {
+        color: #666;
+        font-size: 20px;
+        width: 50%;
+        line-height: 1.5;
+    }
+
+    .description button {
+        border: 1px solid #F97300;
+        background: #F97300;
+        color: #fff;
+    }
+
+
+
+
+
+.row {
+    margin: 2em 0;
+    padding: 1em;
+    position: relative;
+}
+
+    .row h1 {
+        color: #F97300;
+        padding-left: 13em;
+    }
+
+    .row img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%
+    }
+
+    .row span {
+        display: block;
+        color: #888;
+        position: absolute;
+        left: 115px;
+    }
+
+    .row .desc {
+        padding: 2em;
+        border-left: 4px solid #10828C;
+    }
+
+        .row .desc h3 {
+            color: #10828C;
+        }
+
+        .row .desc p {
+            line-height: 2;
+            color: #888;
+        }
+
+
+
+.portfolio {
+    margin: 4em 0;
+    position: relative;
+}
+    .portfolio h1 {
+        color: #F97300;
+        
+    }
+    .portfolio img{
+        height:15rem;
+        width:100%;
+        margin:1em;
+        border-radius: 2px;
+    }
+.blog{
+    margin:4em 0;
+    position:relative;
+
+}
+    .blog h1 {
+        color: #F97300;
+        margin: 2em;
+    }
+    .blog .card{
+        box-shadow: 30px 10px 20px #ccc;
+    }
+    .blog .card img{
+        width:100%;
+        height:12em;
+        border-radius: 5px;
+    }
+    .blog .card-title {
+        color: #F97300;
+    }
+
+    .blog .card-body {
+        padding: 1em;
+    }
+
+
+
+.team {
+    margin: 4em 0;
+    position: relative;
+}
+
+    .team h1 {
+        color: #F97300;
+        margin: 2em;
+    }
+
+    .team .item {
+        position: relative;
+    }
+    .team img {
+        width: 100%;
+        height: 20em;
+        border-radius: 5px;
+    }
+
+    .team .des {
+        background: #F97300;
+        color: #fff;
+        text-align: center;
+        border-bottom-left-radius: 93%;
+        transition: 3s ease-in-out;
+    }
+    .team .item:hover .des {
+        height: 100%;
+        background: #f973007d;
+        position: absolute;
+        width: 89%;
+        padding: 5em;
+        top: 0;
+        border-bottom-left-radius: 0;
+    }
+
+
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+
+    .contact-form h1 {
+        padding: 2em 1px;
+        color: #F97300;
+    }
+
+    .contact-form .right {
+        max-width: 600px;
+    }
+
+        .contact-form .right .btn-secondary {
+            background: #F97300;
+            color: #fff;
+            border: 0;
+        }
+
+        .contact-form .right .form-control::placeholder {
+            color: #888;
+            font-size: 16px;
+        }
+
+.footer {
+  position: relative;
+  top: 166em;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.container-fluid{
+    position:absolute;
+    color:seagreen;
+    padding-top:120px;
+}
